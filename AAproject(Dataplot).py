@@ -9,11 +9,11 @@ def graph_label(xLa,yLa):
     plt.xlabel(xLa)
     plt.ylabel(yLa)
     
-#เริ่มต้น โปรแกรม
+
 while(True):
     n = int(input("press button 1 for plot graph \npress button 2 for end a program\n:"))
     if(n==1):
-#ถามชื่อกราฟ
+
       while(True):
           yes_no_quest = input("Do you want to name your graph(yes/no)?\n:")
           if(yes_no_quest=='Yes' or yes_no_quest=='yes'):
@@ -25,7 +25,7 @@ while(True):
               break
           else:
               print("Wrong input!! Try again")
-#ถามชื่อ เส้น x และ เส้น y
+
       while(True):      
           yes_no_quest2= input("Do you want to name xlabels and ylabels(yes/no)?\n:")
           if(yes_no_quest2 =='Yes' or yes_no_quest2=='yes'):
@@ -41,7 +41,7 @@ while(True):
               break
           else:
               print("Wrong input!! Try again")
-#รับข้อมูล มา plot graph     
+   
       x = [int(i) for i in input("Enter X:").split()]
       y = [int(j) for j in input("Enter y:").split()]
       graph_plot(x,y)
@@ -51,4 +51,3 @@ while(True):
         break
     else:
         print("you input wrong number")
-#patch ล่าสุด รับชื่อ กราฟได้ รับชื่อของแกน x แกน y ได้ พอท กราฟเส้นได้
